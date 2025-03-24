@@ -3,3 +3,41 @@
 Repositório voltado para estudos da anatomia de Java e convenções globais do idioma.
 
 Estou desenvolvendo assistindo as Aulas do DIO - "Aprendendo sintaxe Java"
+
+[Tipos primitivos](#tipos-primitivos)
+
+
+## tipos primitivos
+
+são tipos primitivos:
+`int, byte, short, long, float, double, boolean e char`
+
+Não considerados objetos, portando representam valores brutos. Armazenados diretamente na memória (Memory stack).
+
+type     |bytes|            min               |              max          |
+---------|-----|------------------------------|---------------------------|
+**Byte** | 1   |                          -128|                        127|
+**Short**| 2   |                       -32.768|                     32.767|
+**int**  | 4   |                -2.147.483.648|              2.147.483.647|
+**long** | 8   |    -9.223.372.036.854.775.808|  9.223.372.036.854.775.807|
+
+Comumente utilizado o **int** (por conta da JVM).
+
+`tipo| tamanho`|
+----|-----|
+**float** |4 bytes|
+**double** |8 bytes|
+
+**double** mais usado (por conta da precisão).
+
+> short e byte se tornou desnecessário, devido a alta capacidade dos computadores atuais.
+
+um short pode ser um int mas um int não pode-ser um short
+
+```java
+
+short numeroPequeno = 1;
+int numero = numeroPequeno;
+short numeroPequeno = numero; // ERRO
+
+```
