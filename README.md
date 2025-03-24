@@ -6,7 +6,6 @@ Estou desenvolvendo assistindo as Aulas do DIO - "Aprendendo sintaxe Java"
 
 [Tipos primitivos](#tipos-primitivos)
 
-
 ## tipos primitivos
 
 são tipos primitivos:
