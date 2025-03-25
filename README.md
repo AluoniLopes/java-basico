@@ -60,13 +60,30 @@ String nomeCompleto = "LINGUAGEM" + "JAVA" // "LINGUAGEMJAVA"
 
 String concatenaçao ="?";
 
-concatenacao = 1+1+1+"1";   //   31
+concatenacao = 1+1+1+"1";    //   31
 
-concatenacao = 1+"1"+1+1;   // 1111
+concatenacao = 1+"1"+1+1;    // 1111
 
-concatenacao = 1+"1"+1+"1"; // 1111
+concatenacao = 1+"1"+1+"1";  // 1111
 
-concatenacao = "1"+1+1+1;   // 1111
+concatenacao = "1"+1+1+1;    // 1111
 
-concatenacao = "1"+ (1+1+1);// 13
+concatenacao = "1"+ (1+1+1); // 13
+```
+
+## Operador unários
+
+operador    |        função         |
+:----------:|-----------------------|
+**!**       | Negação booleano      |
+**++**      | incremento de valor   |
+**--**      | decremento de valor   |
+
+```java
+int numero = 5;
+numero = - numero; // -5
+
+numero = + numero // -5 (operador '+' não o torna positivo)
+
+numero = numero * -1; // 5 ('-' com '-' = '+')
 ```
