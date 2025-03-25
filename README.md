@@ -14,7 +14,7 @@ são tipos primitivos:
 Não considerados objetos, portando representam valores brutos. Armazenados diretamente na memória (Memory stack).
 
 type     |bytes|            min               |              max          |
----------|-----|------------------------------|---------------------------|
+---------|-----|-----------------------------:|--------------------------:|
 **Byte** | 1   |                          -128|                        127|
 **Short**| 2   |                       -32.768|                     32.767|
 **int**  | 4   |                -2.147.483.648|              2.147.483.647|
@@ -39,4 +39,15 @@ short numeroPequeno = 1;
 int numero = numeroPequeno;
 short numeroPequeno = numero; // ERRO
 
+```
+
+## Operadores
+
+```java
+double soma = 10.5 + 15.7;
+int subtração = 113 - 25;
+int multiplicacao = 20 * 7;
+int divisao = 15 / 3;
+int modulo = 18 % 3 ;
+double resultado = (10 * 7) + (20/4);
 ```
