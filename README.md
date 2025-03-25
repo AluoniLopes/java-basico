@@ -5,6 +5,7 @@ Repositório voltado para estudos da anatomia de Java e convenções globais do 
 Estou desenvolvendo assistindo as Aulas do DIO - "Aprendendo sintaxe Java"
 
 [Tipos primitivos](#tipos-primitivos)
+[Operadores](#operadores)
 
 ## tipos primitivos
 
@@ -50,4 +51,22 @@ int multiplicacao = 20 * 7;
 int divisao = 15 / 3;
 int modulo = 18 % 3 ;
 double resultado = (10 * 7) + (20/4);
+```
+
+### Concatenação de Strings
+
+```java
+String nomeCompleto = "LINGUAGEM" + "JAVA" // "LINGUAGEMJAVA"
+
+String concatenaçao ="?";
+
+concatenacao = 1+1+1+"1";   //   31
+
+concatenacao = 1+"1"+1+1;   // 1111
+
+concatenacao = 1+"1"+1+"1"; // 1111
+
+concatenacao = "1"+1+1+1;   // 1111
+
+concatenacao = "1"+ (1+1+1);// 13
 ```
