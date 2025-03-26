@@ -71,7 +71,7 @@ concatenacao = "1"+1+1+1;    // 1111
 concatenacao = "1"+ (1+1+1); // 13
 ```
 
-## Operador unários
+### Unários
 
 operador    |        função         |
 :----------:|-----------------------|
@@ -87,3 +87,12 @@ numero = + numero // -5 (operador '+' não o torna positivo)
 
 numero = numero * -1; // 5 ('-' com '-' = '+')
 ```
+
+### Tenários
+
+`<expressão Condicional> ? <Caso condição true>: <Caso false>`
+
+### Lógicos
+
+- && -> operador E
+- || -> operador OU
