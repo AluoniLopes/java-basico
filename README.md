@@ -5,6 +5,7 @@ Repositório voltado para estudos da anatomia de Java e convenções globais do 
 Estou desenvolvendo assistindo as Aulas do DIO - "Aprendendo sintaxe Java"
 
 [Tipos primitivos](#tipos-primitivos)
+[Operadores](#operadores)
 
 ## tipos primitivos
 
@@ -14,7 +15,7 @@ são tipos primitivos:
 Não considerados objetos, portando representam valores brutos. Armazenados diretamente na memória (Memory stack).
 
 type     |bytes|            min               |              max          |
----------|-----|------------------------------|---------------------------|
+---------|-----|-----------------------------:|--------------------------:|
 **Byte** | 1   |                          -128|                        127|
 **Short**| 2   |                       -32.768|                     32.767|
 **int**  | 4   |                -2.147.483.648|              2.147.483.647|
@@ -40,3 +41,82 @@ int numero = numeroPequeno;
 short numeroPequeno = numero; // ERRO
 
 ```
+
+## Operadores
+
+```java
+double soma = 10.5 + 15.7;
+int subtração = 113 - 25;
+int multiplicacao = 20 * 7;
+int divisao = 15 / 3;
+int modulo = 18 % 3 ;
+double resultado = (10 * 7) + (20/4);
+```
+
+### Concatenação de Strings
+
+```java
+String nomeCompleto = "LINGUAGEM" + "JAVA" // "LINGUAGEMJAVA"
+
+String concatenaçao ="?";
+
+concatenacao = 1+1+1+"1";    //   31
+
+concatenacao = 1+"1"+1+1;    // 1111
+
+concatenacao = 1+"1"+1+"1";  // 1111
+
+concatenacao = "1"+1+1+1;    // 1111
+
+concatenacao = "1"+ (1+1+1); // 13
+```
+
+### Unários
+
+operador    |        função         |
+:----------:|-----------------------|
+**!**       | Negação booleano      |
+**++**      | incremento de valor   |
+**--**      | decremento de valor   |
+
+```java
+int numero = 5;
+numero = - numero; // -5
+
+numero = + numero // -5 (operador '+' não o torna positivo)
+
+numero = numero * -1; // 5 ('-' com '-' = '+')
+```
+
+### Tenários
+
+`<expressão Condicional> ? <Caso condição true>: <Caso false>`
+
+### Lógicos
+
+- && -> operador E
+- || -> operador OU
+
+## Métodos
+
+uma classe é definido por atributos e metodos.
+
+Os métodos, por sua vez, correspondem a **funções** ou **sub-rotinas** disponíveis dentro de nossas classes.
+
+### Convenções
+
+- Nomeado como verbo (acelerar, parar, iniciar)
+- padrão *camelCase* (somente Uppercase para primeira letra da segunda palavra)
+
+Ex: doThing, concluirProcessamento, findById
+
+Analizar qual se e qual tipo de retorno esperado. Do contrario, ele será um `void`
+
+1. **Tratamento de exceções:** Verifique se o método pode gerar exceções e implemente um tratamento adequado quando necessário.
+
+2. **Controle de visibilidade:** Defina a visibilidade do método conforme a necessidade, seja pública, protegida, de pacote ou privada.
+
+## Visibilidade de classe / metodo
+
+- **Public** -> visível no escopo global
+- **private** -> apenas na classe
