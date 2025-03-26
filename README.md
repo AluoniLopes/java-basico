@@ -210,3 +210,11 @@ javadoc -encoding UTF-8 -docencoding UTF-8 -d ../docs ./src/*.java
 ```
 
 Dessa forma, evita-se problemas com acentos e caracteres especiais em diferentes idiomas.
+
+## Argumentos com console
+
+Ao executar um arquivo Java compilado (*.class), o programa executará o metodo `main`, e os argumentos que forem adicionado serão enviados para o parametro `String[] args`. Confira o exemplo abaixo:
+
+````console
+java -cp [caminho dos arquivos compilados] [caminho do package (e.g. edu.aluoni.AboutMe)] [args [] ]
+````
