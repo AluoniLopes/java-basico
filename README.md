@@ -96,3 +96,27 @@ numero = numero * -1; // 5 ('-' com '-' = '+')
 
 - && -> operador E
 - || -> operador OU
+
+## Métodos
+
+uma classe é definido por atributos e metodos.
+
+Os métodos, por sua vez, correspondem a **funções** ou **sub-rotinas** disponíveis dentro de nossas classes.
+
+### Convenções
+
+- Nomeado como verbo (acelerar, parar, iniciar)
+- padrão *camelCase* (somente Uppercase para primeira letra da segunda palavra)
+
+Ex: doThing, concluirProcessamento, findById
+
+Analizar qual se e qual tipo de retorno esperado. Do contrario, ele será um `void`
+
+1. **Tratamento de exceções:** Verifique se o método pode gerar exceções e implemente um tratamento adequado quando necessário.
+
+2. **Controle de visibilidade:** Defina a visibilidade do método conforme a necessidade, seja pública, protegida, de pacote ou privada.
+
+## Visibilidade de classe / metodo
+
+- **Public** -> visível no escopo global
+- **private** -> apenas na classe
