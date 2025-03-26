@@ -120,3 +120,101 @@ Analizar qual se e qual tipo de retorno esperado. Do contrario, ele será um `vo
 
 - **Public** -> visível no escopo global
 - **private** -> apenas na classe
+
+## Palavras reservadas
+
+### Modificadores de acesso
+
+- **public**: acesso de qualquer classe
+- **private**: acesso apenas dentro da classe
+- **protected**: acesso por classes no mesmo pacote e subclasses
+
+### Modificadores de classes, variaveis ou metodos
+
+- **abstract**: classe que não pode ser instanciada ou método que precisa ser implementado por uma subclasse não abstrata
+- **extends**: indica a superclasse que a subclasse está estendendo
+- **implements**: indica as *interface*'s que uma classe implementa
+- **interface**: especifica uma *interface*
+- **native**: (raro) indica um metodo que depende de plataforma (Ex: C)
+- **syncronized**: indica que só pode ser acessado por uma thread de cada vez.
+
+## Java doc
+
+Ademais de comentário de linha e bloco, o javaDOC é uma ferramenta interessante:
+
+```java
+/** duas estrelas para representar um Java Doc
+ * 
+ * @author  Legal, CARA
+ * @version 1.0
+ * @since   2025-01-01
+ */
+
+public class SomeClass {
+
+    /**
+     * @param value o valor a ser atribuido para a propriedade volume
+     * @return String
+     */
+    public void createString(String name){
+        return name;
+    };
+}
+```
+
+commando útil (e divertido) criará uma exibição HTML para o Java Doc acima:
+
+```console
+javadoc -encoding UTF-8 -docencoding ISO-8859-1 -d ../docs ./src/*.java
+```
+
+### Parâmetros
+
+#### `-encoding UTF-8`
+
+Define a codificação dos arquivos-fonte Java que serão processados pelo Javadoc. Neste caso, os arquivos `.java` são lidos usando a codificação **UTF-8**.
+
+#### `-docencoding ISO-8859-1`
+
+Define a codificação dos arquivos HTML gerados na documentação. Aqui, os documentos finais serão escritos em **ISO-8859-1**, uma codificação com suporte a caracteres especiais de línguas europeias.
+
+#### `-d ../docs`
+
+Especifica o diretório de saída para a documentação gerada. O Javadoc criará a documentação na pasta `../docs` (um nível acima do diretório atual, na pasta "docs").
+
+#### `./src/*.java`
+
+Indica que todos os arquivos `.java` localizados dentro do diretório `src` serão processados pelo Javadoc para gerar a documentação.
+
+### Exemplo de Uso
+
+Se você estiver em um projeto com a seguinte estrutura:
+
+```tree
+meu_projeto/
+|-- src/
+|   |-- MinhaClasse.java
+|   |-- OutraClasse.java
+|-- docs/  (será criado pelo comando)
+|-- build/
+```
+
+Executar o comando acima na raiz do projeto gerará a documentação no diretório `docs/` contendo a documentação das classes Java do diretório `src/`.
+
+### Observação
+
+Caso a documentação precise suportar caracteres especiais de diversas línguas, é recomendável usar `UTF-8` também no `-docencoding`:
+
+```console
+javadoc -encoding UTF-8 -docencoding UTF-8 -d ../docs ./src/*.java
+```
+
+Dessa forma, evita-se problemas com acentos e caracteres especiais em diferentes idiomas.
+
+## Argumentos com console
+
+Ao executar um arquivo Java compilado (*.class), o programa executará o metodo `main`, e os argumentos que forem adicionado serão enviados para o parametro `String[] args`. Confira o exemplo abaixo:
+
+````console
+java -cp [caminho dos arquivos compilados] [caminho do package (e.g. edu.aluoni.AboutMe)] [args [] ]
+````
