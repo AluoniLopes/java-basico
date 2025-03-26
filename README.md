@@ -120,3 +120,20 @@ Analizar qual se e qual tipo de retorno esperado. Do contrario, ele será um `vo
 
 - **Public** -> visível no escopo global
 - **private** -> apenas na classe
+
+## Palavras reservadas
+
+### Modificadores de acesso
+
+- **public**: acesso de qualquer classe
+- **private**: acesso apenas dentro da classe
+- **protected**: acesso por classes no mesmo pacote e subclasses
+
+### Modificadores de classes, variaveis ou metodos
+
+- **abstract**: classe que não pode ser instanciada ou método que precisa ser implementado por uma subclasse não abstrata
+- **extends**: indica a superclasse que a subclasse está estendendo
+- **implements**: indica as *interface*'s que uma classe implementa
+- **interface**: especifica uma *interface*
+- **native**: (raro) indica um metodo que depende de plataforma (Ex: C)
+- **syncronized**: indica que só pode ser acessado por uma thread de cada vez.
