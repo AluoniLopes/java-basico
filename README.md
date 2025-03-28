@@ -5,7 +5,7 @@ Repositório voltado para estudos da anatomia de Java e convenções globais do 
 Estou desenvolvendo assistindo as Aulas do DIO - "Aprendendo sintaxe Java"
 
 <details open>
-    
+
 <summary>Sumário</summary>
 
 ## Sumário
@@ -14,15 +14,15 @@ Estou desenvolvendo assistindo as Aulas do DIO - "Aprendendo sintaxe Java"
 
 [Operadores](#operadores)
 
-[Métodos](#Métodos)
+[Métodos](#métodos)
 
-[Palavras reservadas](#Palavras-reservadas)
+[Palavras reservadas](#palavras-reservadas)
 
-[Java doc](#Java-doc)
+[Java doc](#java-doc)
 
-[Argumentos com console](#Argumentos-com-console)
+[Argumentos com console](#argumentos-com-console)
 
-[Estruturas de Condicionais](#Estruturas-de-Condicionais)
+[Estruturas de Condicionais](#estruturas-de-condicionais)
 
 </details>
 
