@@ -4,6 +4,9 @@ Repositório voltado para estudos da anatomia de Java e convenções globais do 
 
 Estou desenvolvendo assistindo as Aulas do DIO - "Aprendendo sintaxe Java"
 
+<details>
+    
+<summary> Sumário </summary>
 [Tipos primitivos](#tipos-primitivos)
 
 [Operadores](#operadores)
@@ -17,6 +20,8 @@ Estou desenvolvendo assistindo as Aulas do DIO - "Aprendendo sintaxe Java"
 [Argumentos com console](#Argumentos-com-console)
 
 [Estruturas de Condicionais](#Estruturas-de-Condicionais)
+
+</details>
 
 ## tipos primitivos
 
