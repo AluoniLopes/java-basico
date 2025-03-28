@@ -218,3 +218,59 @@ Ao executar um arquivo Java compilado (*.class), o programa executará o metodo 
 ````console
 java -cp [caminho dos arquivos compilados] [caminho do package (e.g. edu.aluoni.AboutMe)] [args [] ]
 ````
+
+## Estruturas de Condicionais
+
+São estruturas que permitem modificar o fluxo do código baseado em condicionais. Para eles, existem comandos para auxiliar na manipulação de estruturas condicionais, tais como `continue` e `break`.
+
+### `if/else`
+
+```java
+    double saldo = 150;
+    double valorSolicitado = 50;
+
+    if (valorSolicitado < saldo) { // condição true, bloco if executado
+        saldo = saldo - valorSolicitado;
+        System.out.println("novo saldo R$" + saldo);
+    } else { // bloco pulado
+        System.out.println("Saldo insuficente");
+        System.out.println("Saldo R$" + saldo);
+    }
+```
+
+### `tenário`
+
+A vantagem dessa condicional é deixar o códido mais compacto e melhor de entender
+
+```java
+        double nota = 2;
+
+        String resultado = nota >= 7 ? "Aprovado" : nota >= 5 ? "Recuperacao" : "Reprovado";
+
+        System.out.println(resultado);
+```
+
+### `Switch Case`
+
+Pode ser considerado mais sensível pois ela exige saber umas regras mais específicas. Veja o código abaixo:
+
+```java
+char sigla = 'M';
+
+switch (sigla) {
+    case 'P':
+        System.out.println("Pequeno");
+        break;
+    case 'M':
+        System.out.println("Medio");
+        break;
+    case 'G':
+        System.out.println("Grande");
+        break;
+    default:
+        System.out.println("Nao especificado");
+        break;
+        }
+```
+
+o `break` é nescessário para ele não executar o bloco abaixo. quando o bloco chega no `case 'P'`, ele executará o bloco, e por padrão sem o break ele executaria o bloco seguinte também (no exemplo, `case 'G'`).
