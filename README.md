@@ -6,7 +6,10 @@ Estou desenvolvendo assistindo as Aulas do DIO - "Aprendendo sintaxe Java"
 
 <details>
     
-<summary>**Sumário**</summary>
+<summary>
+
+    Sumário
+</summary>
 
 [Tipos primitivos](#tipos-primitivos)
 
