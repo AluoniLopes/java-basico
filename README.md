@@ -4,12 +4,11 @@ Repositório voltado para estudos da anatomia de Java e convenções globais do 
 
 Estou desenvolvendo assistindo as Aulas do DIO - "Aprendendo sintaxe Java"
 
-<details>
+<details open>
     
-<summary>
+<summary>Sumário</summary>
 
-    Sumário
-</summary>
+## Sumário
 
 [Tipos primitivos](#tipos-primitivos)
 
