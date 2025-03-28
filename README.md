@@ -6,6 +6,11 @@ Estou desenvolvendo assistindo as Aulas do DIO - "Aprendendo sintaxe Java"
 
 [Tipos primitivos](#tipos-primitivos)
 [Operadores](#operadores)
+[Métodos](#Métodos)
+[Palavras reservadas](#Palavras-reservadas)
+[Java doc](#Java-doc)
+[Argumentos com console](#Argumentos-com-console)
+[Estruturas de Condicionais](#Estruturas-de-Condicionais)
 
 ## tipos primitivos
 
