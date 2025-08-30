@@ -51,13 +51,13 @@ Comumente utilizado o **int** (por conta da JVM).
 
 > short e byte se tornou desnecessário, devido a alta capacidade dos computadores atuais.
 
-um short pode ser um int mas um int não pode ser um short
+um short pode ser um int mas um int não pode-ser um short
 
 ```java
 
 short numeroPequeno = 1;
 int numero = numeroPequeno;
-short outroNumeroPequeno = numero; // ERRO
+short numeroPequeno = numero; // ERRO
 
 ```
 
@@ -129,7 +129,7 @@ Os métodos, por sua vez, correspondem a **funções** ou **sub-rotinas** dispon
 
 Ex: doThing, concluirProcessamento, findById
 
-Analizar qual se e qual tipo de retorno esperado. Do contrario, ele será um `void`
+Analizar se e qual tipo de retorno esperado. Do contrario, ele será um `void`
 
 1. **Tratamento de exceções:** Verifique se o método pode gerar exceções e implemente um tratamento adequado quando necessário.
 
