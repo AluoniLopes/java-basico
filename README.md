@@ -293,3 +293,34 @@ switch (sigla) {
 ```
 
 o `break` é nescessário para ele não executar o bloco abaixo. quando o bloco chega no `case 'P'`, ele executará o bloco, e por padrão sem o break ele executaria o bloco seguinte também (no exemplo, `case 'G'`).
+
+## Exeções
+
+Diferente de erros, exeções são fluxos inesperados nas aplicações (ex: divisão por 0, procurar arquivo inexistente, login inválido de banco de dados). É importante para o programador prever esses erros e realizar o denominado **tratamento de exceções**.
+
+![!\[Fluxo Exeções\](https://raw.githubusercontent.com/digitalinnovationone/trilha-java-basico/refs/heads/main/gitbook/.gitbook/assets/image%20(6).png)](https://raw.githubusercontent.com/digitalinnovationone/trilha-java-basico/refs/heads/main/gitbook/.gitbook/assets/image%20(6).png)
+
+### Tratamento
+
+1. `try`: Permite definir bloco de código para testar os erros
+2. `catch`: Define um bloco de código caso o try retorne algum erro.
+Possibilitando criar mais de um, poderá personalizar o fluxo para cada tipo de erro
+3. `finally`: Cria uma parte que será executada, independente de ocorrer um erro ou não.
+
+### Criar exeções personalizadas
+
+```java
+public class CepInvalidoException extends Exception {}
+```
+
+Em seguida criamos nosso método de formatação de cep.
+
+```java
+static String formatarCep(String cep) throws CepInvalidoException{
+        if(cep.length() != 8)
+          throw new CepInvalidoException();
+        
+          //simulando um cep formatado
+          return "23.765-064";
+    }
+```
