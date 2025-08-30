@@ -51,13 +51,13 @@ Comumente utilizado o **int** (por conta da JVM).
 
 > short e byte se tornou desnecessário, devido a alta capacidade dos computadores atuais.
 
-um short pode ser um int mas um int não pode-ser um short
+um short pode ser um int mas um int não pode ser um short
 
 ```java
 
 short numeroPequeno = 1;
 int numero = numeroPequeno;
-short numeroPequeno = numero; // ERRO
+short outroNumeroPequeno = numero; // ERRO
 
 ```
 
